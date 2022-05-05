@@ -8,11 +8,11 @@ export default function Navbar() {
     const [navState, setNavState] = useState(false);
     return (
         <Nav>
-            <div className="brand">
-                <div className="logo">
-                    <img src={logo} alt="Earthium" />
+            <div className={"brand"}>
+                <div className={"logo"}>
+                    <img src={logo} alt={"Earthium"} />
                 </div>
-                <div className="toggle">
+                <div className={"toggle"}>
                     {navState ? (
                         <BsToggleOn onClick={() => setNavState(false)} />
                     ) : (
@@ -23,21 +23,21 @@ export default function Navbar() {
             <div className={`links ${navState ? "show" : "hide"}`}>
                 <ul>
                     <li>
-                        <a href="home">Home</a>
+                        <a href={"home"}>Home</a>
                     </li>
                     <li>
-                        <a href="map">Map</a>
+                        <a href={"map"}>Map</a>
                     </li>
                     <li>
-                        <a href="about">About</a>
+                        <a href={"about"}>About</a>
                     </li>
                     <li>
-                        <a href="news">News</a>
+                        <a href={"news"}>News</a>
                     </li>
                 </ul>
-                <div className="login-btn">
-                    <div className="flag">
-                        <img src={flag} alt="Flag" />
+                <div className={"login-btn"}>
+                    <div className={"flag"}>
+                        <img src={ flag } alt={"Flag"} />
                         <span> English</span>
                     </div>
                     <button>

@@ -6,22 +6,22 @@ import Button from "./Button";
 import { RiGroupLine } from "react-icons/ri";
 export default function Home() {
     return (
-        <Section id="home">
-            <div className="text">
+        <Section id={"home"}>
+            <div className={"text"}>
                 <h1>
-                    <span className="highlight">Earthium</span> is a real-time stratergic
+                    <span className={"highlight"}>Earthium</span> is a real-time stratergic
                     game
                 </h1>
                 <p>
-                    Where you can earn money, <span className="highlight"> crypto </span>
+                    Where you can earn money, <span className={"highlight"}> crypto </span>
                     and
-                    <span className="highlight"> NFTs </span>
+                    <span className={"highlight"}> NFTs </span>
                     by trading land, finding treasures and building businesses. Welcome!
                 </p>
-                <Button text="Join Our Discord" icon={<RiGroupLine />} />
+                <Button text={"Join Our Discord"} icon={ <RiGroupLine /> } />
             </div>
-            <div className="image">
-                <img src={image} alt="Home Image" />
+            <div className={"image"}>
+                <img src={ image } alt={"Home Image"} />
             </div>
         </Section>
     );

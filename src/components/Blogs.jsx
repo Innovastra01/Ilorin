@@ -7,17 +7,17 @@ import blog3 from "../assets/blog3.png";
 export default function Blogs() {
     const images = [blog1, blog2, blog3];
     return (
-        <Section id="blogs">
-            <div className="title">
+        <Section id={"blogs"}>
+            <div className={"title"}>
                 <h2>News & Feeds</h2>
                 <h5>Where you can earn crypto</h5>
             </div>
             <div className="blogs">
                 {images.map((img, index) => {
                     return (
-                        <div className="blog" key={index}>
-                            <img src={img} alt="Blog Image" />
-                            <div className="data">
+                        <div className={"blog"} key={index}>
+                            <img src={ img } alt={"Blog Image"} />
+                            <div className={"data"}>
                                 <h6>31 Jan, 2021</h6>
                                 <h4>Rightmove Now Offering Click to Purchase Option</h4>
                                 <p>

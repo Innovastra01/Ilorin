@@ -29,33 +29,33 @@ export default function Footer() {
     ];
     return (
         <Footr>
-            <div className="upper__footer">
-                <div className="brand">
-                    <img src={logo} alt="Footer Logo" />
+            <div className={"upper__footer"}>
+                <div className={"brand"}>
+                    <img src={ logo } alt={"Footer Logo"} />
                     <p>
                         From Tron to Narnya, the idea to suddenly be transferred in another
                         world, where you could move, feel, interact and communicate is a
                         recurring theme in books, animes and movies.
                     </p>
-                    <div className="mail-container">
-                        <input type="email" placeholder="Enter Email" />
-                        <Button text="Get Started" />
+                    <div className={"mail-container"}>
+                        <input type={"email"} placeholder={"Enter Email"} />
+                        <Button text={"Get Started"} />
                     </div>
                 </div>
                 {links.map(({ title, links }) => {
                     return (
-                        <div className="links" key={title}>
-                            <h3>{title}</h3>
+                        <div className={"links"} key={ title }>
+                            <h3>{ title }</h3>
                             <ul>
                                 {links.map((link) => (
-                                    <li key={link}>{link}</li>
+                                    <li key={ link }>{ link }</li>
                                 ))}
                             </ul>
                         </div>
                     );
                 })}
             </div>
-            <div className="lower__footer">
+            <div className={"lower__footer"}>
                 <span>&copy; 2022 Earthium</span>
                 <ul>
                     <li>Facebook</li>
